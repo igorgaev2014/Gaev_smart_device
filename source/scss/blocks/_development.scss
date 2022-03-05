@@ -1,0 +1,37 @@
+.development {
+  border-top: 1px solid $footer-border;
+  letter-spacing: 0.04em;
+}
+
+.development ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 7px;
+  padding-right: 9px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 20px;
+    padding-right: 0px;
+  }
+}
+
+.development li:last-child {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.development__item--rights {
+  margin-right: 75px;
+}
+
+.development__item--company {
+  margin-right: 140px;
+}
+
+.development__item--rights, .development__item--company {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}

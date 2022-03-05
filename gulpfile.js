@@ -4,7 +4,7 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import rename from 'gulp-rename';
-import terser from 'gulp-terser';
+
 import concat from 'gulp-concat';
 import posthtml from 'gulp-posthtml';
 import include from 'posthtml-include';
@@ -45,8 +45,8 @@ const scripts = () => {
   return gulp.src(['source/js/modules/*.js', '!source/**/_*.*'], {
       sourcemaps: true,
     })
-    .pipe(terser())
-    .pipe(concat('script.js'))
+
+    .pipe(concat('main.js'))
     .pipe(gulp.dest('build/js', {
       sourcemaps: '.',
     }))
@@ -57,7 +57,7 @@ const scriptsVendor = () => {
   return gulp.src(['source/js/vendor/*.js', '!source/**/_*.*'], {
       sourcemaps: true,
     })
-    .pipe(terser())
+
     .pipe(concat('vendor.js'))
     .pipe(gulp.dest('build/js', {
       sourcemaps: '.',
@@ -115,6 +115,17 @@ const copy = (done) => {
   done();
 }
 
+// copyImages
+
+const copyImages = (done) => {
+  gulp.src([
+      "source/img/**",
+    ], {
+      base: 'source'
+    })
+    .pipe(gulp.dest('build'))
+  done();
+}
 
 // Clean
 
