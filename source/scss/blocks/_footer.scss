@@ -8,6 +8,10 @@
   @media (max-width: $tablet-width) {
     padding-top: 4px;
   }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 30px;
+  }
 }
 
 .footer a, .footer p {
@@ -33,4 +37,14 @@
   font-family: $font-secondary;
   color: $footer-title;
   margin-bottom: 25px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 29px;
+  }
+}
+
+.footer ul {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 27px;
+  }
 }

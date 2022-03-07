@@ -8,8 +8,8 @@
   flex-wrap: wrap;
   padding-top: 14px;
   padding-bottom: 14px;
-  padding-left: 7px;
   padding-right: 9px;
+  padding-left: 3px;
 
   @media (max-width: $tablet-width) {
     padding-top: 20px;
@@ -26,6 +26,10 @@
   @media (max-width: $mobile-width) {
     margin: 0 auto;
     margin-bottom: 21px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 27px;
   }
 }
 
@@ -44,6 +48,10 @@
 
 .development__item--company {
   margin-right: 140px;
+
+  @media (max-width: $desktop-width) {
+    margin-right: 90px;
+  }
 }
 
 .development__item--rights, .development__item--company {
