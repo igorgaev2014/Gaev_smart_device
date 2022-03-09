@@ -1,0 +1,102 @@
+.about {
+  padding-top: 74px;
+  padding-bottom: 100px;
+  color: $about-text;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 60px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 15px;
+    padding-top: 40px;
+  }
+}
+
+.about h3 {
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 400;
+  font-family: $font-secondary;
+  margin: 0;
+  margin-bottom: 22px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 45px;
+    margin-bottom: 27px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 27px;
+    line-height: 39px;
+    margin-bottom: 22px;
+  }
+}
+
+.about p {
+  font-size: 16px;
+  line-height: 21.5px;
+  font-family: $font-primary;
+  margin: 0;
+  max-width: 984px;
+  margin-bottom: 39px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 2px;
+    margin-bottom: 42px;
+  }
+
+  &::after {
+    display: none;
+    @media (max-width: $tablet-width) {
+      content: '..';
+      display: inline;
+    }
+  }
+}
+
+.about a {
+  color: $basic-blue;
+  border-color: $basic-blue;
+  text-align: center;
+  display: inline-block;
+  min-width: 180px;
+  margin-bottom: 10px;
+
+  &:hover {
+    color: $basic-white;
+    background-color: $basic-blue;
+    border: 1px solid transparent;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-left: 5px;
+  }
+}
+
+.about span {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.about__wrapper {
+  padding-left: 195px;
+  background-image: url('../img/2005@1x.png');
+  background-repeat: no-repeat;
+  background-position: left -15px top 4px;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 208px;
+    padding-right: 20px;
+    background-position: left -8px top 1px;
+    background-size: 249px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 0px;
+    background-image: none;
+    padding-right: 0px;
+  }
+}

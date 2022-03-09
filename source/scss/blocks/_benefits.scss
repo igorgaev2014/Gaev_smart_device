@@ -2,6 +2,14 @@
   padding-top: 112px;
   max-width: 1200px;
   margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 55px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 36px;
+  }
 }
 
 .benefits ul {
@@ -34,14 +42,54 @@
     color: $basic-white;
   }
 
+  @media (max-width: $tablet-width) {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 25px;
+    padding-right: 20px;
+    margin-bottom: 29px;
+  }
+
   @media (max-width: $mobile-width) {
     width: 100%;
+    padding-left: 22px;
+    padding-bottom: 25px;
+    margin-left: -2px;
+    margin-bottom: 20px;
+    padding-top: 24px;
+  }
+}
+
+.benefits li:nth-child(2) {
+  @media (max-width: $mobile-width) {
+    padding-right: 10px;
+  }
+}
+
+.benefits li:last-child, .benefits li:nth-last-child(2) {
+  @media (max-width: $tablet-width) {
+    min-height: 230px;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.benefits li:nth-last-child(2) {
+  @media (max-width: $mobile-width) {
+    padding-right: 14px;
   }
 }
 
 .benefits svg {
   fill: $basic-blue;
   margin-bottom: 16px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 9px;
+  }
 }
 
 .benefits h3 {
@@ -52,6 +100,15 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 15px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .benefits p {
@@ -60,4 +117,13 @@
   font-size: 16px;
   line-height: 21.5px;
   font-weight: 400;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 10px;
+  }
 }
