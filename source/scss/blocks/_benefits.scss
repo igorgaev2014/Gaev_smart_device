@@ -54,11 +54,11 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
-    padding-left: 22px;
+    padding-left: 24px;
     padding-bottom: 25px;
     margin-left: -2px;
     margin-bottom: 20px;
-    padding-top: 24px;
+    padding-top: 26px;
   }
 }
 
@@ -77,11 +77,17 @@
   @media (max-width: $mobile-width) {
     margin-bottom: 20px;
   }
+
+  h3 {
+    @media (max-width: $mobile-width) {
+      margin-bottom: 17px;
+    }
+  }
 }
 
 .benefits li:nth-last-child(2) {
   @media (max-width: $mobile-width) {
-    padding-right: 14px;
+    padding-right: 10px;
   }
 }
 

@@ -12,11 +12,11 @@
 
   @media (max-width: $tablet-width) {
     padding-top: 20px;
-    padding-bottom: 180px;
+    padding-bottom: 181px;
   }
 
   @media (max-width: $mobile-width) {
-    padding-bottom: 70px;
+    padding-bottom: 71px;
     padding-top: 17px;
   }
 }
@@ -128,6 +128,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    padding-top: 16px;
   }
 }
 
@@ -150,7 +151,17 @@
     height: 488px;
 
     @media (max-width: $tablet-width) {
-      display: none;
+      top: -34px;
+      left: -61px;
+      background-size: 612px auto;
+      background-position: left -92px top -127px;
+    }
+
+    @media (max-width: $mobile-width) {
+      top: -23px;
+      left: 138px;
+      background-size: 587px auto;
+      background-position: left -92px top -124px;
     }
   }
 
