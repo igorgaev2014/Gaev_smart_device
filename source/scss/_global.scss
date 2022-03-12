@@ -53,6 +53,7 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  vertical-align: middle;
 }
 
 .title {
@@ -60,6 +61,17 @@ img {
   line-height: 50px;
   font-weight: 400;
   margin-top: 0;
+  font-family: $font-secondary;
+
+  @media (max-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 28px;
+    line-height: 39px;
+  }
 }
 
 .button {
