@@ -29,6 +29,4 @@ accordions.forEach(function (accordion) {
     }
   });
 });
-
-
 //# sourceMappingURL=main.js.map

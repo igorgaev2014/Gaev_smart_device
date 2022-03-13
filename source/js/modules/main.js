@@ -29,5 +29,3 @@ accordions.forEach(function (accordion) {
     }
   });
 });
-
-

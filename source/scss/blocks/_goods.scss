@@ -60,7 +60,7 @@
   max-width: 370px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -81,7 +81,7 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     z-index: 2;
@@ -89,7 +89,7 @@
     right: 0;
     width: 63px;
     height: 63px;
-    background-image: url('../img/arrow-right.svg');
+    background-image: url("../img/arrow-right.svg");
     background-repeat: no-repeat;
     background-color: $basic-blue;
     background-position: center;
@@ -131,7 +131,6 @@
   @media (max-width: $tablet-width) {
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 100%;
   }

@@ -1,6 +1,6 @@
 .header {
   background-color: $goods-background;
-  background-image: url('/img/bg@1x.jpg');
+  background-image: url("../img/bg@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -67,7 +67,7 @@
   margin-bottom: 62px;
 
   &::before {
-    content: '';
+    content: "";
     width: 66px;
     height: 2px;
     background-color: $basic-white;
@@ -84,7 +84,7 @@
     margin-left: 114px;
 
     &::before {
-      content: '';
+      content: "";
       width: 33px;
       left: -48px;
       top: 16px;
@@ -139,13 +139,13 @@
   z-index: -1;
   width: 707px;
 
-  &:before {
+  &::before {
     position: absolute;
     content: "";
     left: 13px;
     top: 14px;
     z-index: -1;
-    background: url('../img/triangles.svg') left -128px top -164px;
+    background: url("../img/triangles.svg") left -128px top -164px;
     background-repeat: no-repeat;
     width: 611px;
     height: 488px;

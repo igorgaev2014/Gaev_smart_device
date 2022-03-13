@@ -41,28 +41,26 @@
     position: absolute;
     width: 32px;
     height: 32px;
-    top: 37px;
-    right: 20px;
     background-color: transparent;
     border: none;
     top: 29px;
     right: 1px;
 
-    &:before, &:after {
-      content: '';
+    &::before,
+    &::after {
+      content: "";
       position: absolute;
       background-color: $footer-border;
-
     }
 
-    &:before {
+    &::before {
       width: 16px;
       height: 1px;
       top: 8px;
       left: 0;
     }
 
-    &:after {
+    &::after {
       width: 1px;
       height: 16px;
       top: 0;
@@ -127,7 +125,7 @@
 }
 
 .button--opened {
-  &:after {
+  &::after {
     display: none;
   }
 }

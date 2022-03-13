@@ -68,7 +68,8 @@
   }
 }
 
-.benefits li:last-child, .benefits li:nth-last-child(2) {
+.benefits li:last-child,
+.benefits li:nth-last-child(2) {
   @media (max-width: $tablet-width) {
     min-height: 230px;
     margin-bottom: 0;
