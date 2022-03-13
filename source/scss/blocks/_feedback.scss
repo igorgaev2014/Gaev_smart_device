@@ -1,0 +1,26 @@
+.feedback {
+  background-color: $basic-blue;
+  color: $basic-white;
+  min-height: 670px;
+  padding: 90px 40px;
+}
+
+.feedback h3 {
+  margin-bottom: 14px;
+}
+
+.feedback p {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: $font-primary;
+  margin: 0;
+  margin-bottom: 53px;
+}
+
+.feedback__wrapper {
+  max-width: 570px;
+  margin-left: auto;
+  margin-right: 135px;
+}
+
