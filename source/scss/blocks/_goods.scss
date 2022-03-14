@@ -3,11 +3,11 @@
   color: $basic-white;
   font-family: $font-secondary;
   padding-top: 88px;
-  padding-bottom: 127px;
+  padding-bottom: 126px;
 
   @media (max-width: $tablet-width) {
     padding-top: 50px;
-    padding-bottom: 29px;
+    padding-bottom: 28px;
   }
 
   @media (max-width: $mobile-width) {
@@ -15,12 +15,17 @@
   }
 }
 
-.goods h3 {
+.goods h2 {
   margin: 0;
-  margin-bottom: 49px;
+  margin-bottom: 54px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 
   @media (max-width: $mobile-width) {
     margin-bottom: 44px;
+    padding-left: 10px;
   }
 }
 

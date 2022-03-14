@@ -4,7 +4,7 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import rename from 'gulp-rename';
-
+import csso from 'postcss-csso';
 import concat from 'gulp-concat';
 import posthtml from 'gulp-posthtml';
 import include from 'posthtml-include';
@@ -25,6 +25,10 @@ export const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(postcss([
+      csso()
+    ]))
+    .pipe(rename("style.min.css"))
     .pipe(gulp.dest('build/css', {
       sourcemaps: '.'
     }))

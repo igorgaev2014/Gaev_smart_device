@@ -17,7 +17,7 @@
   }
 }
 
-.about h3 {
+.about h2 {
   font-size: 36px;
   line-height: 50px;
   font-weight: 400;
@@ -112,6 +112,11 @@
   background-image: url("../img/2005@1x.png");
   background-repeat: no-repeat;
   background-position: left -15px top 4px;
+
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/2005@2x.png");
+  }
 
   @media (max-width: $tablet-width) {
     padding-left: 208px;

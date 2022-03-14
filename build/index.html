@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
+  <meta name="description" content="Smart Device">
   <title>Smart Device</title>
   <link rel="shortcut icon" href="#">
   <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="no-js">
@@ -43,16 +43,22 @@
               <span>+7 (495) 000 52 52</span>
             </a>
           </li>
-          <button class="button">Заказать звонок</button>
+          <li>
+            <button class="button">Заказать звонок</button>
+          </li>
         </ul>
       </nav>
       <div class="header__info">
         <div class="header__info-wrapper">
-          <img src="img/content/plates-desktop@1x.png" width="705" height="515" alt="Печатные платы">
+          <picture>
+            <source type="image/webp" srcset="img/content/plates-desktop@1x.webp 1x, img/content/plates-desktop@2x.webp 2x">
+            <!-- 1x: 705px; 2x: 1410px -->
+            <img src="img/content/plates-desktop@1x.png" width="705" height="515" alt="Печатные платы">
+          </picture>
         </div>
         <h1>Печатные платы</h1>
         <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a href="#consult" class="button">
+        <a href="#feedback" class="button">
           <span class="header__button header__button--desktop">Получить бесплатную консультацию</span>
           <span class="header__button header__button--mobile">Бесплатная консультация</span>
         </a>
@@ -67,28 +73,28 @@
               <svg width="35" height="35" viewBox="0 0 35 35">
                 <use xlink:href="img/sprite.svg#stopwatch"></use>
               </svg>
-              <h3>Оперативные сроки</h3>
+              <h2>Оперативные сроки</h2>
               <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
             </li>
             <li>
               <svg width="35" height="35" viewBox="0 0 35 35">
                 <use xlink:href="img/sprite.svg#hired"></use>
               </svg>
-              <h3>Крупные поставщики</h3>
+              <h2>Крупные поставщики</h2>
               <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
             </li>
             <li>
               <svg width="36" height="31" viewBox="0 0 36 31">
                 <use xlink:href="img/sprite.svg#detective"></use>
               </svg>
-              <h3>Полная конфиденциальность</h3>
+              <h2>Полная конфиденциальность</h2>
               <p>По желанию клиента   мы обеспечиваем полную конфеденциальность.</p>
             </li>
             <li>
               <svg width="35" height="35" viewBox="0 0 35 35">
                 <use xlink:href="img/sprite.svg#tag"></use>
               </svg>
-              <h3>Персонализация стоимости</h3>
+              <h2>Персонализация стоимости</h2>
               <p>Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
             </li>
           </ul>
@@ -96,7 +102,7 @@
       </section>
       <section class="about container">
         <div class="about__wrapper">
-        <h3 class="title">О компании</h3>
+        <h2 class="title">О компании</h2>
         <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
         <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span> (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
         <a class="button" href="#">Подробнее</a>
@@ -105,22 +111,28 @@
     </div>
     <section class="goods">
       <div class="goods__wrapper">
-        <h3 class="title">Service Device предлагает следующие товары и услуги</h3>
+        <h2 class="title">Service Device предлагает следующие товары и услуги</h2>
         <div class="goods__group">
             <a href="#">
               <picture>
+                <source type="image/webp" srcset="img/content/production-desktop@1x.webp 1x, img/content/production-desktop@2x.webp 2x">
+                <!-- 1x: 370px; 2x: 740px -->
                 <img src="img/content/production-desktop@1x.png" width="370" height="620" alt="Производство печатных плат">
               </picture>
               <span>Производство печатных плат</span>
             </a>
             <a href="#">
               <picture>
+                <source type="image/webp" srcset="img/content/montage-desktop@1x.webp 1x, img/content/montage-desktop@2x.webp 2x">
+                <!-- 1x: 370px; 2x: 740px -->
                 <img src="img/content/montage-desktop@1x.png" width="370" height="620" alt="Производство печатных плат">
               </picture>
               <span>Монтаж печатных плат</span>
             </a>
             <a href="#">
               <picture>
+                <source type="image/webp" srcset="img/content/light-desktop@1x.webp 1x, img/content/light-desktop@2x.webp 2x">
+                <!-- 1x: 370px; 2x: 740px -->
                 <img src="img/content/light-desktop@1x.png" width="370" height="620" alt="Производство печатных плат">
               </picture>
               <span>Комплектующие для светотехники</span>
@@ -128,10 +140,10 @@
         </div>
       </div>
     </section>
-    <section class="feedback">
-      <div class="wrapper">
+    <section class="feedback" id="feedback">
+      <div class="feedback__container wrapper">
         <div class="feedback__wrapper">
-          <h3 class="title">Остались вопросы? Задайте их нам!</h3>
+          <h2 class="title">Остались вопросы? Задайте их нам!</h2>
           <p>Мы проконсультируем Вас бесплатно</p>
           <form class="form" method="GET">
             <label class="visually-hidden" for="name">Имя</label>
@@ -185,8 +197,10 @@
           </ul>
         </div>
         <div class="info-footer__sections accordion">
-          <h3>Разделы сайта</h3>
-          <button class="info-footer__button"></button>
+          <h2>Разделы сайта</h2>
+          <button class="info-footer__button">
+            <span class="visually-hidden">Развернуть</span>
+          </button>
           <ul class="info-footer__list list-reset">
             <li><a href="#">О компании</a></li>
             <li><a href="#">Продукты</a></li>
@@ -198,8 +212,10 @@
           </ul>
         </div>
         <div class="info-footer__contacts accordion">
-          <h3>Наш офис</h3>
-          <button class="info-footer__button"></button>
+          <h2>Наш офис</h2>
+          <button class="info-footer__button">
+            <span class="visually-hidden">Развернуть</span>
+          </button>
           <ul class="info-footer__list list-reset">
             <li><p>г. Мытищи, Олимпийский проспект, д.10</p></li>
             <li><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>
