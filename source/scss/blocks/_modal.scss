@@ -1,0 +1,86 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 25;
+  width: 490px;
+  transform: translate(-50%, -50%);
+  min-height: 605px;
+  margin-top: -3px;
+  padding-top: 20px;
+  padding-right: 25px;
+  padding-bottom: 37px;
+  padding-left: 25px;
+  background-image: none;
+  background-color: #00b2ff;
+  z-index: 30;
+
+  .form {
+    margin-top: 20px;
+  }
+
+  input,
+  textarea {
+    margin-bottom: 31px;
+    width: 100%;
+    padding-left: 23px;
+  }
+
+  textarea {
+    min-height: 104px;
+  }
+
+  .form__submit {
+    flex-direction: column;
+
+    button {
+      margin-bottom: 33px;
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+      padding-left: 0;
+      padding-right: 0;
+      min-width: 411px;
+    }
+
+    [type=checkbox]+label {
+      padding-left: 50px;
+    }
+  }
+}
+
+.modal h2 {
+  margin-top: 10px;
+  font-size: 28px;
+  line-height: 140.62%;
+  margin-left: 0px;
+  margin-bottom: 12px;
+}
+
+.modal p {
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 400px;
+  margin-bottom: 33px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/icons/close.svg") top right no-repeat transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 0;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $basic-white;
+  }
+}
+
+.modal--closed {
+  display: none;
+}
