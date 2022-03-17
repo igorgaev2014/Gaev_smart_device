@@ -16,11 +16,12 @@
   }
 }
 
-.main-nav__button {
+.main-nav__button.button {
   margin-left: 50px;
   width: 180px;
   background-color: transparent;
   border: 1px solid $basic-white;
+  justify-content: center;
 
   @media (max-width: $tablet-width) {
     display: none;

@@ -79,6 +79,7 @@
 .form [type="checkbox"] + label {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   padding-left: 30px;
   color: $basic-white;
   cursor: pointer;
