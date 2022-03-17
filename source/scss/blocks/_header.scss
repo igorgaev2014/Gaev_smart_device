@@ -6,7 +6,7 @@
   background-position: center;
   color: $basic-white;
   padding-top: 34px;
-  padding-bottom: 293px;
+  padding-bottom: 275px;
   z-index: 0;
   overflow: hidden;
 
@@ -16,7 +16,7 @@
 
   @media (max-width: $tablet-width) {
     padding-top: 20px;
-    padding-bottom: 181px;
+    padding-bottom: 163px;
   }
 
   @media (max-width: $mobile-width) {
@@ -68,7 +68,7 @@
   max-width: 680px;
   margin-left: 98px;
   position: relative;
-  margin-bottom: 62px;
+  margin-bottom: 44px;
 
   &::before {
     content: "";
@@ -84,8 +84,8 @@
     font-size: 18px;
     line-height: 28px;
     max-width: 356px;
-    margin-bottom: 73px;
     margin-left: 114px;
+    margin-bottom: 55px;
 
     &::before {
       content: "";
@@ -131,8 +131,6 @@
   @media (max-width: $mobile-width) {
     width: auto;
     margin: 0 auto;
-    // display: flex;
-    //justify-content: center;
     padding-top: 16px;
   }
 }

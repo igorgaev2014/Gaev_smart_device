@@ -62,14 +62,14 @@
   }
 }
 
-.benefits li:nth-child(2) {
+.benefits li:nth-child(3n+2) {
   @media (max-width: $mobile-width) {
     padding-right: 10px;
   }
 }
 
 .benefits li:last-child,
-.benefits li:nth-last-child(2) {
+.benefits li:nth-last-child(-n+2) {
   @media (max-width: $tablet-width) {
     min-height: 230px;
     margin-bottom: 0;
@@ -86,7 +86,7 @@
   }
 }
 
-.benefits li:nth-last-child(2) {
+.benefits li:nth-last-child(-n+2) {
   @media (max-width: $mobile-width) {
     padding-right: 10px;
   }

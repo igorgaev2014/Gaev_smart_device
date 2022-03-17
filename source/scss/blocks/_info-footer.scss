@@ -5,14 +5,13 @@
   justify-content: space-between;
   padding-left: 7px;
   padding-right: 10px;
-  //margin-bottom: 12px;
   margin-bottom: 18px;
 
   @media (max-width: $tablet-width) {
     flex-wrap: wrap;
     margin-bottom: 35px;
-    padding-left: 2px;
-    padding-right: 15px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   @media (max-width: $mobile-width) {
@@ -39,8 +38,8 @@
     margin: 0;
     display: block;
     position: absolute;
-    width: 32px;
-    height: 32px;
+    width: 16px;
+    height: 16px;
     background-color: transparent;
     border: none;
     top: 29px;
@@ -82,20 +81,23 @@
     width: 100%;
     position: relative;
     flex: 1 1 100%;
-    padding-left: 33px;
-    padding-right: 20px;
-    margin-left: -17px;
-    margin-right: -31px;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding-left: 14px;
   }
 }
 
 .info-footer__sections {
   @media (max-width: $mobile-width) {
-    border-bottom: 1px solid $footer-border;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100vw;
+      right: -16px;
+      bottom: -1px;
+      z-index: 40;
+      height: 1px;
+      background-color: $footer-border;
+    }
   }
 }
 
@@ -127,5 +129,25 @@
 .button--opened {
   &::after {
     display: none;
+  }
+}
+
+.info-footer__logo {
+  @media (max-width: $tablet-width) {
+    margin-top: -3px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: -4px;
+  }
+}
+
+.info-footer__contacts {
+  @media (max-width: $tablet-width) {
+    margin-right: 12px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-right: 0;
   }
 }

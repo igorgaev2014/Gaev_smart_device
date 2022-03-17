@@ -4,34 +4,39 @@
   left: 50%;
   width: 490px;
   transform: translate(-50%, -50%);
-  min-height: 605px;
-  margin-top: -3px;
-  padding-top: 20px;
-  padding-right: 25px;
-  padding-bottom: 37px;
-  padding-left: 25px;
   background-image: none;
   background-color: #00b2ff;
   z-index: 30;
+  min-height: 0;
+  padding: 16px 24px 41px;
+  margin-top: 17px;
 }
 
 .modal form {
   margin-top: 20px;
+  flex-direction: column;
+}
+
+.modal [type="tel"],
+.modal [type="text"] {
+  width: 100%;
+  margin-bottom: 35px;
 }
 
 .modal input,
 .modal textarea {
-  margin-bottom: 31px;
-  width: 100%;
   padding-left: 23px;
+  padding-top: 10px;
 }
 
 .modal textarea {
   min-height: 104px;
+  width: 100%;
+  margin-bottom: 27px;
 }
 
 .modal h2 {
-  margin-top: 10px;
+  margin-top: 14px;
   font-size: 28px;
   line-height: 140.62%;
   margin-left: 0;
@@ -46,24 +51,25 @@
 }
 
 .modal button {
+  display: block;
   margin-bottom: 33px;
   width: 100%;
   margin-right: 0;
   margin-left: 0;
   padding-left: 0;
   padding-right: 0;
-  min-width: 411px;
 }
 
 .modal [type="checkbox"] + label {
   padding-left: 50px;
+  max-width: 410px;
 }
 
 .modal .form__submit {
   flex-direction: column;
 }
 
-.modal__close {
+.modal .modal__close {
   position: absolute;
   top: 20px;
   right: 20px;
