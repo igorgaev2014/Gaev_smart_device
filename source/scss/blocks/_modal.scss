@@ -2,7 +2,6 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  z-index: 25;
   width: 490px;
   transform: translate(-50%, -50%);
   min-height: 605px;
@@ -14,46 +13,28 @@
   background-image: none;
   background-color: #00b2ff;
   z-index: 30;
+}
 
-  .form {
-    margin-top: 20px;
-  }
+.modal form {
+  margin-top: 20px;
+}
 
-  input,
-  textarea {
-    margin-bottom: 31px;
-    width: 100%;
-    padding-left: 23px;
-  }
+.modal input,
+.modal textarea {
+  margin-bottom: 31px;
+  width: 100%;
+  padding-left: 23px;
+}
 
-  textarea {
-    min-height: 104px;
-  }
-
-  .form__submit {
-    flex-direction: column;
-
-    button {
-      margin-bottom: 33px;
-      width: 100%;
-      margin-right: 0;
-      margin-left: 0;
-      padding-left: 0;
-      padding-right: 0;
-      min-width: 411px;
-    }
-
-    [type=checkbox]+label {
-      padding-left: 50px;
-    }
-  }
+.modal textarea {
+  min-height: 104px;
 }
 
 .modal h2 {
   margin-top: 10px;
   font-size: 28px;
   line-height: 140.62%;
-  margin-left: 0px;
+  margin-left: 0;
   margin-bottom: 12px;
 }
 
@@ -62,6 +43,24 @@
   line-height: 22px;
   max-width: 400px;
   margin-bottom: 33px;
+}
+
+.modal button {
+  margin-bottom: 33px;
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+  min-width: 411px;
+}
+
+.modal [type="checkbox"] + label {
+  padding-left: 50px;
+}
+
+.modal .form__submit {
+  flex-direction: column;
 }
 
 .modal__close {

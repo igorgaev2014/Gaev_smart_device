@@ -8,27 +8,12 @@
   }
 }
 
-.form__submit {
-  display: flex;
-  align-items: center;
-  margin-top: 2px;
-
-  @media (max-width: $tablet-width) {
-    margin-top: 3px;
-  }
-
-  @media (max-width: $mobile-width) {
-    flex-direction: column;
-    margin-top: -2px;
-  }
-}
-
-input {
+.form input {
   height: 50px;
 }
 
-input,
-textarea {
+.form input,
+.form textarea {
   width: 100%;
   background-color: $special-blue;
   border: 0;
@@ -66,7 +51,7 @@ textarea {
   }
 }
 
-textarea {
+.form textarea {
   min-height: 154px;
   resize: none;
 
@@ -79,8 +64,8 @@ textarea {
   }
 }
 
-[type="tel"],
-[type="text"] {
+.form [type="tel"],
+.form [type="text"] {
   width: calc(50% - 15px);
 
   @media (max-width: $mobile-width) {
@@ -88,7 +73,7 @@ textarea {
   }
 }
 
-[type="checkbox"] + label {
+.form [type="checkbox"] + label {
   position: relative;
   display: inline-block;
   padding-left: 30px;
@@ -109,7 +94,7 @@ textarea {
   }
 }
 
-[type="checkbox"] + label::before {
+.form [type="checkbox"] + label::before {
   content: "";
   position: absolute;
   top: 4px;
@@ -120,11 +105,11 @@ textarea {
   border: 1px solid $basic-white;
 }
 
-[type="checkbox"]:focus + label::before {
+.form [type="checkbox"]:focus + label::before {
   outline: 3px solid $basic-white;
 }
 
-[type="checkbox"] + label::after {
+.form [type="checkbox"] + label::after {
   content: "";
   position: absolute;
   top: 9px;
@@ -135,7 +120,7 @@ textarea {
   background: url("../img/tick.svg") center no-repeat transparent;
 }
 
-[type="checkbox"]:checked + label::after {
+.form [type="checkbox"]:checked + label::after {
   display: block;
 }
 
@@ -158,5 +143,20 @@ textarea {
     margin-right: 0;
     margin-bottom: 30px;
     min-width: 289px;
+  }
+}
+
+.form__submit {
+  display: flex;
+  align-items: center;
+  margin-top: 2px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 3px;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    margin-top: -2px;
   }
 }
