@@ -33,9 +33,12 @@
 .goods__group {
   display: flex;
   column-gap: 30px;
+  flex-wrap: wrap;
+  row-gap: 30px;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
+    row-gap: 0;
   }
 }
 

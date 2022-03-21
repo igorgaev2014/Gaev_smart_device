@@ -1,19 +1,19 @@
 const accordions = document.querySelectorAll('.accordion');
-const accordionButtons = document.querySelectorAll('.info-footer__button');
+const accordionTabs = document.querySelectorAll('.info-footer h2');
 const accordionLists = document.querySelectorAll('.info-footer__list');
 
 accordions.forEach(function (accordion) {
-  const button = accordion.querySelector('.info-footer__button');
+  const tab = accordion.querySelector('.info-footer h2');
   const list = accordion.querySelector('.info-footer__list');
 
-  button.addEventListener('click', function () {
-    if (button.classList.contains('button--opened')) {
-      button.classList.remove('button--opened');
+  tab.addEventListener('click', function () {
+    if (tab.classList.contains('tab--opened')) {
+      tab.classList.remove('tab--opened');
     } else {
-      accordionButtons.forEach(function (btn) {
-        btn.classList.remove('button--opened');
+      accordionTabs.forEach(function (btn) {
+        btn.classList.remove('tab--opened');
       });
-      button.classList.add('button--opened');
+      tab.classList.add('tab--opened');
     }
 
     if (list.classList.contains('list--opened')) {
@@ -27,6 +27,7 @@ accordions.forEach(function (accordion) {
   });
 });
 
+const page = document.querySelector('.page');
 const body = document.body;
 const overlay = document.querySelector('.overlay');
 const modalOpenButton = document.querySelector('.main-nav__button');
@@ -40,7 +41,7 @@ const openModal = function () {
   if (modal.classList.contains('modal--closed')) {
     modal.classList.remove('modal--closed');
     overlay.classList.remove('overlay--closed');
-    body.classList.add('overflow');
+    page.classList.add('overflow');
     nameField.focus();
   }
 }
@@ -49,7 +50,7 @@ const closeModal = function () {
   if (!modal.classList.contains('modal--closed')) {
     modal.classList.add('modal--closed');
     overlay.classList.add('overlay--closed');
-    body.classList.remove('overflow');
+    page.classList.remove('overflow');
   }
 }
 

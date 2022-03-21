@@ -1,3 +1,4 @@
+const page = document.querySelector('.page');
 const body = document.body;
 const overlay = document.querySelector('.overlay');
 const modalOpenButton = document.querySelector('.main-nav__button');
@@ -11,7 +12,7 @@ const openModal = function () {
   if (modal.classList.contains('modal--closed')) {
     modal.classList.remove('modal--closed');
     overlay.classList.remove('overlay--closed');
-    body.classList.add('overflow');
+    page.classList.add('overflow');
     nameField.focus();
   }
 }
@@ -20,7 +21,7 @@ const closeModal = function () {
   if (!modal.classList.contains('modal--closed')) {
     modal.classList.add('modal--closed');
     overlay.classList.add('overlay--closed');
-    body.classList.remove('overflow');
+    page.classList.remove('overflow');
   }
 }
 

@@ -18,7 +18,7 @@
 
 .main-nav__button.button {
   margin-left: 50px;
-  width: 180px;
+  min-width: 180px;
   background-color: transparent;
   border: 1px solid $basic-white;
   justify-content: center;
@@ -30,8 +30,10 @@
 
 .main-nav ul {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: auto;
 }
 
 .main-nav li {
@@ -46,9 +48,9 @@
   }
 }
 
-.main-nav li:last-of-type {
+/* .main-nav li:last-of-type {
   margin-left: 0;
-}
+} */
 
 .main-nav a {
   display: flex;

@@ -3,10 +3,11 @@
   padding-top: 15px;
 
   @media (max-width: $desktop-width) {
-    margin-right: 0;
+    margin-right: 50px;
   }
 
   @media (max-width: $tablet-width) {
+    margin-right: 0;
     flex: 1 1 100%;
     display: flex;
     justify-content: space-between;
@@ -45,7 +46,6 @@
 
 .social ul {
   display: flex;
-  gap: 15px;
   margin-bottom: 41px;
   margin-top: 45px;
 
@@ -79,4 +79,12 @@
 
 .social a {
   display: block;
+}
+
+.social li {
+  margin-right: 15px;
+}
+
+.social li:last-child {
+  margin-right: 0;
 }
